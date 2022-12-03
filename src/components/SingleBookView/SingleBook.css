@@ -1,0 +1,35 @@
+.book-record-heading {
+  text-align: center;
+}
+
+.book-record-table {
+  margin-left: 300px;
+  width: 1000px;
+  height: 400px;
+  background-color: black;
+}
+
+.book-record-id {
+  width: 100px;
+  text-align: center;
+}
+
+.edit-book-button {
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 500px;
+  height: 30px;
+  color: gold;
+  border-color: gold;
+  background-color: rgb(50, 24, 74);
+}
+
+.delete-book-button {
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 40px;
+  height: 30px;
+  color: gold;
+  border-color: gold;
+  background-color: rgb(50, 24, 74);
+}

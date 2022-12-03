@@ -1,0 +1,55 @@
+.book-list-heading {
+  margin-left: 700px;
+}
+
+.add-book-button {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.add-book-button:hover {
+  cursor: pointer;
+}
+
+.book-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1000px;
+  height: 1000px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.single-book-container {
+  width: 300px;
+  height: 450px;
+  border: 2px solid black;
+  margin: 11px;
+}
+
+.book-pic {
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 270px;
+}
+
+.book-details {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+#book-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+#book-title:hover {
+  cursor: pointer;
+  font-style: italic;
+  color: rgb(218, 44, 44);
+}

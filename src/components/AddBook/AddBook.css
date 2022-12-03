@@ -1,0 +1,45 @@
+.add-book-container {
+  margin-top: 80px;
+  margin-left: 400px;
+  width: 700px;
+  height: 500px;
+  justify-content: center;
+  color: white;
+}
+
+/* .add-book-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.add-book-input {
+  width: 600px;
+  margin: 10px;
+  margin-left: 45px;
+}
+
+.add-book-submit {
+  width: 400px;
+  height: 30px;
+  margin-left: 160px;
+  margin-top: 20px;
+  text-align: center;
+  color: gold;
+  border: 2px solid gold;
+  background-color: blueviolet;
+}
+
+.booklist-navigate-button {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.add-book-heading {
+  text-align: center;
+}
+
+.add-book-submit:hover,
+.booklist-navigate-button:hover {
+  cursor: pointer;
+}
