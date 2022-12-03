@@ -20,7 +20,7 @@ const AddBook = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://localhost:5000/add", {
+    const res = await fetch("https://booklist-10x-academy.onrender.com/add", {
       method: "POST",
       body: JSON.stringify(bookData),
       headers: {
@@ -29,11 +29,11 @@ const AddBook = () => {
     });
     const data = await res.json();
     alert(data.message);
-    navigate("/");
+    navigate("/books");
   };
 
   const handleNavigate = () => {
-    navigate("/");
+    navigate("/books");
   };
 
   return (

@@ -6,17 +6,20 @@ const SingleBook = ({ singleBookData }) => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/");
+    navigate("/books");
   };
 
   const handleDelete = async () => {
     const id = singleBookData._id;
-    const res = await fetch(`http://localhost:5000/book/${id}`, {
-      method: "DELETE",
-    });
+    const res = await fetch(
+      `https://booklist-10x-academy.onrender.com/book/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     const data = await res.json();
     alert(data.message);
-    navigate("/");
+    navigate("/books");
   };
 
   const handleEdit = () => {

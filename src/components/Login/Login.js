@@ -13,7 +13,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const email = enteredUserData.email;
-    const res = await fetch(`http://localhost:5000/login/${email}`);
+    const res = await fetch(
+      `https://booklist-10x-academy.onrender.com/login/${email}`
+    );
     const data = await res.json();
     console.log(data);
     if (data.status === "Failed") {
@@ -29,7 +31,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <h1>Login</h1>
-      <form onClick={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           required

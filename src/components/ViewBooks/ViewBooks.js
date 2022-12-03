@@ -7,7 +7,7 @@ const ViewBooks = ({ setSingleBookData }) => {
   const [bookList, setBookList] = useState([]);
 
   const fetchBooks = async () => {
-    const res = await fetch("http://localhost:5000/add");
+    const res = await fetch("https://booklist-10x-academy.onrender.com/add");
     const data = await res.json();
     setBookList(data.data);
   };
@@ -22,7 +22,9 @@ const ViewBooks = ({ setSingleBookData }) => {
 
   const handleClick = async (e) => {
     let title = e.target.innerText;
-    const res = await fetch(`http://localhost:5000/book/${title}`);
+    const res = await fetch(
+      `https://booklist-10x-academy.onrender.com/book/${title}`
+    );
     const data = await res.json();
     setSingleBookData(data.data);
     navigate("/records");

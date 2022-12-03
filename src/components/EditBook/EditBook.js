@@ -15,7 +15,7 @@ const EditBook = ({ singleBookData, setSingleBookData }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const id = editedData._id;
-    await fetch(`http://localhost:5000/edit/${id}`, {
+    await fetch(`https://booklist-10x-academy.onrender.com/edit/${id}`, {
       method: "PUT",
       body: JSON.stringify(editedData),
       headers: {
@@ -26,7 +26,7 @@ const EditBook = ({ singleBookData, setSingleBookData }) => {
   };
 
   const handleNavigate = () => {
-    navigate("/");
+    navigate("/books");
   };
   return (
     <div className="edit-book-container">
